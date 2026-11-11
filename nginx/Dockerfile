@@ -4,7 +4,7 @@ FROM nginx
 #Posem dins de la imatge els certificats que "hem generat / ens han donat"
 COPY ./certificats/ /etc/nginx/ssl/
 
-#Posem dins de la imatge els certificats que "hem generat / ens han donat"
+#Posem dins de la imatge la configuració del servidor. Atenció al nom!
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 
